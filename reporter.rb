@@ -1,12 +1,18 @@
 require_relative 'features/support/API'
 require 'json'
 
+job_name = ARGV[0]
+job_number = ARGV[1]
+
 thumbnail = {'url' => 'https://fortunedotcom.files.wordpress.com/2014/09/451256444.jpg'}
 
 fields = []
 
 fields.push({'name' => 'Autors', 'value'=>'Aleksejs'})
 fields.push({'name' => 'TA', 'value'=>'DA'})
+fields.push({'name' => 'Job', 'value' => job_name})
+fields.push({'name' => 'Build number', 'value' => job_number})
+
 
 embeds = []
 
